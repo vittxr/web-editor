@@ -1,0 +1,52 @@
+.libs-container {
+    display: block;
+    height: 80px;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    width: 0px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.arrow {
+   display: block;
+   height: 2px;
+   width: 50px;   
+   background: white;
+   margin: 0;
+   box-shadow: -2px 4px 5px rgba(0,0,0,0.5)
+}
+
+.arrow::before, .arrow::after {
+   content: '';   
+   width: 14px;
+   height: 2px;
+   right: 0px;
+   background: white;
+   position: absolute;
+   box-shadow: 2px 2px 5px rgba(0,0,0,0.5)
+}
+
+.arrow::before {
+    top: -4px;
+    transform: rotate(-45deg);
+}
+
+.arrow::after {
+    top: 4px;
+    transform: rotate(45deg);
+}
+
+/*animation: */
+.arrow-hover__animation {
+    transform: translate(-8px);
+    transition: all .5s cubic-bezier(.3,2,1,1);
+}

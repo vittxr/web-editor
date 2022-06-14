@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="script/css/summernote-lite.min.css" rel="stylesheet">
+    <link href="script/css/summernote-ext-table.css" rel="stylesheet" type="text/css"> 
+
+    <link rel="stylesheet" href="script/css/main.css">
+    <link rel="stylesheet" href="script/css/components/arrow.css">
+    <link rel='stylesheet' href="script/css/responsividade/mobile.css">
+</head>
+<body>
+    <!--context menu:-->
+    <ul class="menu">
+        <li id="btn-limpar" class="btn-limpar toolbar-header__options">
+            Clean 
+        </li>
+
+        <li>
+            <label for='document'>Open file</label>
+            <input class='btn-upload' id="document" type="file">
+        </li>
+    </ul>
+
+
+    <!--backdrop:-->
+    <div class="backdrop"></div>
+    <!--modal:-->
+    <div class="modal_">
+       <ul>
+           <li>
+               <a href="https://summernote.org" class="modal-title">
+                   <h1>Summernote</h1>
+                </a>
+                <p class="modal-description">Summernote is a lib to ease up the development of a rich-text editor in web.</p>
+            </li>
+            <li>
+                <a href="https://github.com/mwilliamson/mammoth.js/" class="modal-title">
+                    <h1>Mammoth</h1>
+                </a>
+                <p class="modal-description">Mammoth is a lib responsible for converting docx files to html.</p>
+            </li>
+       </ul>
+    </div>
+
+    <!--header:-->
+    <header class="main-header">
+        <nav class="main-nav">
+            <h1 class="main-title">Web Editor</h1>
+            
+            <div class="libs-container">
+                <h3 class="libs">Libs</h3>
+                <div class="icon">
+                   <div class="arrow"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="header-nav"></nav> -->
+    </header>
+
+    <!--text-editor:-->
+    <div class="wrapper-editor">  
+        <form method="post">
+            <textarea id="summernote" class="editor"></textarea>
+        </form>
+    </div> 
+
+<!--Libs:-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="script/js/summernote-lite.min.js"></script>
+<script src="script/js/summernote-ext-table.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="frameworks/mammoth/projects/mammoth/mammoth.js"></script>
+
+<!--Scripts: -->
+<script type='module' src="script/js/main.js"></script>
+<script src="script/js/context-menu.js"></script>
+<script src="script/js/upload.js"></script>
+<script src="script/js/efects.js"></script>
+
+</body>
+</html>

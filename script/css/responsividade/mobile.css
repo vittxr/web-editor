@@ -1,0 +1,5 @@
+@media (max-width: 30rem) {
+    body, h1, h3 {
+       font-size: 1.5em;
+    }
+}
